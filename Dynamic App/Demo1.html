@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="app">
 
 <script src="Dynamic App/bower_components/angular/angular.min.js"></script>
 
-<div >
-{{"hi"}}
+<div ng-controller="ctrl1">
+
+    <h1  ng-repeat ="x in data3" ng-bind="x.id+'..'+x.name+'..'+x.year"></h1>
 
 </div>
 
 <script>
-    var data1="Ranjith";
-    var data2=["Ranjith","kumar","Gurrapu"];
-    var data3=[{"id":1,"name":"Ranjith","year":"2016"},
-        {"id":2,"name":"kumar","year":"2017"},
-        {"id":3,"name":"Gurrapu","year":"2018"}
-    ];
+
+    var app=angular.module("app",[]);
+    app.controller("ctrl1", ctrl1);
+
+    function ctrl1($scope) {
+        var data1 = "Ranjith";
+         $scope.data2 = ["Ranjith", "kumar", "Gurrapu"];
+        $scope.data3 = [{"id": 1, "name": "Ranjith", "year": "2016"},
+            {"id": 2, "name": "kumar", "year": "2017"},
+            {"id": 3, "name": "Gurrapu", "year": "2018"}
+        ];
+
+        $scope.data1="Kumassr";
+        // document.getElementById("hh1").innerHTML=data1;
+        //document.getElementById("pp1").value = data1;
+
+
+    }
 </script>
 
 </html>
