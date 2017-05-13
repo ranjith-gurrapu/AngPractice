@@ -1,0 +1,21 @@
+!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ctrl">
+<script src="app/bower_components/angular/angular.min.js"></script>
+
+<p ng-repeat="x in data" >{{x}}</p>
+
+
+<!--div ng-if="data">
+    <h2>Robust</h2>
+</div-->
+<script>
+
+    var app=angular.module("app",[]);
+    app.controller("ctrl",ctrl);
+
+    function ctrl($scope)
+    {
+        $scope.data=["R","A"];
+    }
+</script>
+</html>
