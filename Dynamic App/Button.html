@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app ng-init="count1=0; count2=0">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="bower_components/angular/angular.min.js"></script>
+
+Book1 :
+<button class="glyphicon glyphicon-plus" ng-click="count1=count1+1"></button>
+<button clas="btn-primary"> {{count1 }}</button>
+<button class="glyphicon glyphicon-minus" ng-click="count1=count1-1"></button>
+
+<br>
+<br>
+Book2 :
+<button class="glyphicon glyphicon-plus" ng-click="count1=count1+1"></button>
+<button clas="btn-primary"> {{count1 }}</button>
+<button class="glyphicon glyphicon-minus" ng-click="count1=count1-1"></button>
+<br>
+<br>
+Squares : {{count1*count1}}
+<br>
+<br>
+Cubes : {{count1*count1*count1}}
+
+</html>
