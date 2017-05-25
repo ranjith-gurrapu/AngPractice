@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<script src="bower_components/angular/angular.min.js"></script>
+
+<h1 style="color: red" ng-controller="ctrl_one" ng-bind="var_one"></h1>
+<script>
+    var app =angular.module("app",[]);
+
+    function my_class(arg1)
+    {
+        this.my_fun= function(){
+            return arg1;
+        }
+    };
+
+    var my_class = function(arg1){
+        this.my_fun = function(){
+            return arg1;
+        }
+    };
+
+    app.factory("my_service", my_service);
+
+    function my_service(){
+        return new my_class("Data from DB soon..").my_fun();
+    }
+
+
+    app.controller("ctrl_one",ctrl_one);
+    ctrl_one.$inject=["$scope","my_service"];
+    function ctrl_one($scope,my_service) {
+        $scope.var_one=my_service.my_fun();
+    }
+
+
+    /*function my_class(arg1){
+     this.my_fun = function () {
+     return arg1;
+     };
+     };*/
+    /*var my_class = function (arg1) {
+     this.my_fun = function () {
+     return arg1;
+     };
+     };*/
+    /*app.factory("my_service",my_service);
+     function my_service() {
+     return new my_class("Data From DB Soon...").my_fun();
+     }*/
+
+</script>
+</html>
