@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+<script src="app.js"></script>
+<script src="controllers/home.js"></script>
+<script src="controllers/about.js"></script>
+<script src="config.js"></script>
+
+<a ui-sref="#key_home">Home</a>&emsp;&emsp;&emsp;&emsp;
+<a ui-sref="#key_about">About Us</a>&emsp;&emsp;&emsp;&emsp;
+<br><br>
+{{"hi"}}
+<div ng-view>
+    {{"hi"}}
+</div>
+</html>
