@@ -4,9 +4,9 @@
 
 app.controller("home",home);
 
-home.$inject=["$scope","$routeParams"]
+home.$inject=["$scope","$stateParams"]
 
-function home($scope,$routeParams){
-    $scope.var_home=$routeParams.param1+"..."+$routeParams.param2+".."+
-        $routeParams.param3;
+function home($scope,$stateParams){
+    $scope.var_home=$stateParams.param1+"..."+$stateParams.param2+".."+
+        $stateParams.param3;
 }

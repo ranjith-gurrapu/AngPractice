@@ -5,11 +5,15 @@
 
 app.config(config);
 
-config.$inject=["$routeProvider"];
+config.$inject=["$stateProvider","$urlRouterProvider"];
 
-function config($routeProvider) {
-    $routeProvider.when("/key_home/:param1/:param2/:param3",{templateUrl: "templates/home.html", controller : "home"})
-    .when("/key_about/:param1/:param2/:param3",{templateUrl: "templates/about.html", controller : "about"})
-        .otherwise("/key_home",{templateUrl: "templates/home.html", controller : "home"});
+function config($stateProvider,$urlRouterProvider) {
+    $stateProvider.state("key_home",{Url: "/home/:id/:name/:age",
+                                    templateUrl:"templates/home.html",
+                                    controller : "home"})
+        .state("key_about",{Url: "/about/:id/:name/:age",
+            templateUrl:"templates/about.html",
+            controller : "about"});
+    $urlRouterProvider.otherwise("/home.html");
 
 }

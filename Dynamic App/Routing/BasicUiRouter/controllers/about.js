@@ -4,9 +4,9 @@
 
 app.controller("about",about);
 
-about.$inject=["$scope","$routeParams"];
+about.$inject=["$scope","$stateParams"];
 
-function about($scope,$routeParams){
-    $scope.var_about=$routeParams.param1+"..."+$routeParams.param2+".."+
-                        $routeParams.param3;
+function about($scope,$stateParams){
+    $scope.var_about=$stateParams.param1+"..."+$stateParams.param2+".."+
+        $stateParams.param3;
 }
