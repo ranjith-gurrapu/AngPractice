@@ -1,0 +1,18 @@
+Name
+		First Name *
+		Last name *
+		
+		Email id
+		password *
+		confirm password *
+		
+		--Suggestions, @gmail ivivsible.
+		
+		DOB
+		Month day year
+		
+		Gender
+		
+		Mobile
+		
+		Current Email Address

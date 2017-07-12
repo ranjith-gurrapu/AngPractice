@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+	<head>
+		
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"	>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+	
+	html, body{ position :absolute;
+			height :100%;
+			width :100%}
+			
+	html{ 	font :80% arial,helvetica;
+			background :#fff;
+			color :#333;
+			line-height:1;
+			direction :ltr;
+	}
+	
+	html,body,header,div,h1,img{ margin:0;
+			padding:0;
+			border:0;
+			}
+			
+	.wrapper{ position:relative;
+				
+				min-height : 100%;
+	}	
+	.giftme-header-bar{ height : 71px;
+						background: #f1f1f1;
+						border-bottom : 10px sold black}
+						
+	
+
+	.header .logo-w{ height :50px;
+					 width:150 px;					
+				   }
+	.header .logo{ margin:17px;
+				   float :left;
+				   }		
+	.header .signin-button{ margin : 22px 0 0;
+							float :right;}		
+	.header .signin-button a { font-size: 13px;
+								font-weight :normal}
+  
+	</style>
+	</head>
+	<body >
+	<div class="wrapper" id="wrapper">
+
+		<div class="giftme-header-bar">
+			<div class="header content clearfix">
+				<img class="logo logo-w" src="logo-gift.jpg" >
+				<span class="signin-button"><a id="link-signin" class="g-button g-button-submit btn btn-primary" href="https://accounts.google.com/SignUp?continue=https%3A%2F%2Fwww.google.co.in%2F%3Fgfe_rd%3Dcr%26ei%3DLC9lWcuyNOuK8QeUuZzYCg&hl=en">Sign in</a><span>
+			</div>
+		</div>
+		
+
+	<section>
+	<div class="signuponpage main content clear-fix" id="sign">
+		<div class="main" id="main">
+			<div class="side-content">
+				<h2>Gift me help finds your buddy gift wish list</h2>
+				<div class="signup">
+					<div class="signup-box">
+						<form class="createaccount-form" id="createaccount" name="createaccount" action="https://www.google.co.in">
+						
+							<div class="form-element multi-field name" id="name-form-element">
+								<fieldset>
+									<legend>
+									
+										Name	
+								
+									
+									</legend>
+									<label id="firstName-label" class="firstname">
+										<input type="text" value name="FirstName" id="FirstName" spellcheck="true" placeholder="First" >	
+										<!--span class="placeholder-text" id="firstname-placeholder" style="display :block"> First</span-->
+									</label>
+									<label id="lastName-label" class="lastname">
+										<input type="text" value name="LastName" id="Lastname" spellcheck="true" placeholder="Last">
+									</label>
+								</fieldset>
+								<span role="alert" class="erromsg" id="erromsg_0_LastName" style="display:none">Cant Leave this empty</span>
+								
+								
+							</div>
+							<div class=" form-element email-address"		id="email-address-form-element">
+							
+								<label id="email-address-label"><strong>Choose your username</strong>
+								<input type="text" maxlength="30" autocomplete="off" name="EmailAddress" id="EmailAddress" class="form-error">
+								<span class="atmail">@gmail.com<span>
+								</label>
+							</div>
+							
+							<div class="form-element" id="password-form-element">
+								<label id="password-label">
+									<strong>Password</strong>
+									<input type="password" name="Passwd" id="Passwd" placeholder="Password">					
+								</label>				
+							</div>
+							<div class="form-element" id="confirmpassword-form-element">
+								<label id="confirm-password-label">
+									<strong>Confirm your Password</strong>
+									<input type="password" name="PasswdAgain" id="PasswdAgain"  placeholder="Confirm Password">					
+								</label>	
+								<span role="alert" class="erromsg" id="erromsg_0_PasswdAgain" style="display:none">Cant Leave this empty</span>
+							</div>
+							<div class="form-element multifield birthday" id="birthday-form-element">
+								<fieldset>
+									<legend><strong>Birthday</strong></legend>
+									<label id="month-label">Month<label>
+									<select id="month-start">
+										<option value=''>Month</option>
+										<option value='1'>January</option>
+										<option value='2'>February</option>
+										<option value='3'>march</option>
+										<option value='4'>April</option>
+										<option value='5'>may</option>
+										<option value='6'>June</option>
+									</select>
+									
+									<label id="day-label">Day<label>
+										<input type="number" name="Day" id="Day" class="Day" placeholder="Day">
+									<label id="year-label">
+										<input type="number" name="Year" id=="Year" placeholder="Year">
+									
+								</fieldset>
+							</div>	
+								
+								
+									
+								
+								
+								<br>
+								<input type="submit" value="Submit">
+								</form>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>	
+		
+		
+	</section>	
+	</div>
+	</body>
+</html>
